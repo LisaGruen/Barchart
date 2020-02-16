@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+:root {
+  --height: 100;
+  --primary-color: #00ffff;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 255, 1) 0%,
+    rgba(138, 43, 226, 1) 50%,
+    rgba(0, 255, 255, 1) 100%
+  );
+  color: var(--primary-color);
+}
+
+h1 {
+  font-family: "Sriracha", cursive;
+  text-align: center;
+}
+h2.text {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.item1 {
+  padding: 30px;
+}
+.item2 {
+  padding: 30px;
+}
+
+hr {
+  border-style: solid;
+  border-width: 2px;
+}
+.charts div {
+  width: 10vw;
+  height: calc(var(--height) * 3px);
+  background: linear-gradient(
+    0deg,
+    rgba(138, 43, 226, 1) 0%,
+    rgba(0, 255, 255, 1) 100%
+  );
+  border-radius: 2px;
+  margin: 2px;
+}
+
+.charts {
+  display: flex;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
